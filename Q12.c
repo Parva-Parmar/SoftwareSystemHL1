@@ -30,7 +30,7 @@ int main() {
     else if (accmode == O_RDWR)
         printf("read/write");
 
-        
+
     printf("\n");
 
     close(fd);
@@ -38,4 +38,8 @@ int main() {
 }
 
 
- 
+/*
+deku@Parva-Parmar:/media/deku/Data/HL1$ gcc Q12.c -o Q12
+deku@Parva-Parmar:/media/deku/Data/HL1$ ./Q12
+File opened in: read/write
+*/
