@@ -30,13 +30,7 @@ int main() {
     else if (accmode == O_RDWR)
         printf("read/write");
 
-    if (flags & O_APPEND)
-        printf(", append mode");
-    if (flags & O_NONBLOCK)
-        printf(", non-blocking mode");
-    if (flags & O_SYNC)
-        printf(", synchronous writes");
-
+        
     printf("\n");
 
     close(fd);
@@ -44,13 +38,4 @@ int main() {
 }
 
 
-/*
-
-deku@Parva-Parmar:/media/deku/Data/Software systems/hands-on-1/Q12$ gcc Q12.c -o Q12
-deku@Parva-Parmar:/media/deku/Data/Software systems/hands-on-1/Q12$ ./Q12
-File opened in: , append mode, non-blocking mode, synchronous writes
-deku@Parva-Parmar:/media/deku/Data/Software systems/hands-on-1/Q12$ gcc Q12.c -o Q12
-deku@Parva-Parmar:/media/deku/Data/Software systems/hands-on-1/Q12$ ./Q12
-File opened in: read/write, append mode
-
-*/
+ 
